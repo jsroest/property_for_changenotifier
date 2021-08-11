@@ -9,7 +9,7 @@ final mainControllerProvider = ChangeNotifierProvider<MainController>(
 );
 
 class MainController extends ChangeNotifier {
-  late var counter = Property<int>(0, notifyListeners);
+  late final counter = Property<int>(0, notifyListeners);
 
   void incrementCounter() => counter.value++;
 }
